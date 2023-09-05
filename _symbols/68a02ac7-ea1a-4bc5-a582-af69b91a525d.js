@@ -1,4 +1,4 @@
-// Site Navigation - Updated September 1, 2023
+// Site Navigation - Updated September 5, 2023
 function noop() { }
 const identity = x => x;
 function assign(tar, src) {
@@ -3130,7 +3130,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-qh80cp");
+			attr(a, "class", "link svelte-55eott");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 		},
 		m(target, anchor) {
@@ -3150,7 +3150,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (122:31) 
+// (121:31) 
 function create_if_block_2(ctx) {
 	let img;
 	let img_src_value;
@@ -3187,7 +3187,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (120:6) {#if logo.title}
+// (119:6) {#if logo.title}
 function create_if_block_1(ctx) {
 	let t_value = /*logo*/ ctx[0].title + "";
 	let t;
@@ -3211,15 +3211,10 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (132:4) {#if mobileNavOpen}
+// (131:4) {#if mobileNavOpen}
 function create_if_block(ctx) {
 	let nav;
-	let t0;
-	let a;
-	let t1_value = /*primary_cta*/ ctx[2].label + "";
-	let t1;
-	let a_href_value;
-	let t2;
+	let t;
 	let button;
 	let icon;
 	let nav_transition;
@@ -3243,10 +3238,7 @@ function create_if_block(ctx) {
 				each_blocks[i].c();
 			}
 
-			t0 = space();
-			a = element("a");
-			t1 = text(t1_value);
-			t2 = space();
+			t = space();
 			button = element("button");
 			create_component(icon.$$.fragment);
 			this.h();
@@ -3259,12 +3251,7 @@ function create_if_block(ctx) {
 				each_blocks[i].l(nav_nodes);
 			}
 
-			t0 = claim_space(nav_nodes);
-			a = claim_element(nav_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t1 = claim_text(a_nodes, t1_value);
-			a_nodes.forEach(detach);
-			t2 = claim_space(nav_nodes);
+			t = claim_space(nav_nodes);
 
 			button = claim_element(nav_nodes, "BUTTON", {
 				id: true,
@@ -3279,13 +3266,11 @@ function create_if_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "href", a_href_value = /*primary_cta*/ ctx[2].url);
-			attr(a, "class", "button svelte-qh80cp");
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-qh80cp");
+			attr(button, "class", "svelte-55eott");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-qh80cp");
+			attr(nav, "class", "svelte-55eott");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3296,10 +3281,7 @@ function create_if_block(ctx) {
 				}
 			}
 
-			append_hydration(nav, t0);
-			append_hydration(nav, a);
-			append_hydration(a, t1);
-			append_hydration(nav, t2);
+			append_hydration(nav, t);
 			append_hydration(nav, button);
 			mount_component(icon, button, null);
 			current = true;
@@ -3322,7 +3304,7 @@ function create_if_block(ctx) {
 					} else {
 						each_blocks[i] = create_each_block(child_ctx);
 						each_blocks[i].c();
-						each_blocks[i].m(nav, t0);
+						each_blocks[i].m(nav, t);
 					}
 				}
 
@@ -3331,12 +3313,6 @@ function create_if_block(ctx) {
 				}
 
 				each_blocks.length = each_value.length;
-			}
-
-			if ((!current || dirty & /*primary_cta*/ 4) && t1_value !== (t1_value = /*primary_cta*/ ctx[2].label + "")) set_data(t1, t1_value);
-
-			if (!current || dirty & /*primary_cta*/ 4 && a_href_value !== (a_href_value = /*primary_cta*/ ctx[2].url)) {
-				attr(a, "href", a_href_value);
 			}
 		},
 		i(local) {
@@ -3368,7 +3344,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (134:8) {#each site_nav as { link }}
+// (133:8) {#each site_nav as { link }}
 function create_each_block(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[8].label + "";
@@ -3415,17 +3391,12 @@ function create_fragment(ctx) {
 	let t0;
 	let nav;
 	let t1;
-	let a1;
-	let t2_value = /*primary_cta*/ ctx[2].label + "";
-	let t2;
-	let a1_href_value;
-	let t3;
 	let div1;
-	let a2;
-	let t4;
+	let a1;
+	let t2;
 	let button;
 	let icon;
-	let t5;
+	let t3;
 	let current;
 	let mounted;
 	let dispose;
@@ -3456,7 +3427,7 @@ function create_fragment(ctx) {
 			props: { height: "30", icon: "eva:menu-outline" }
 		});
 
-	let if_block2 = /*mobileNavOpen*/ ctx[3] && create_if_block(ctx);
+	let if_block2 = /*mobileNavOpen*/ ctx[2] && create_if_block(ctx);
 
 	return {
 		c() {
@@ -3472,16 +3443,13 @@ function create_fragment(ctx) {
 			}
 
 			t1 = space();
-			a1 = element("a");
-			t2 = text(t2_value);
-			t3 = space();
 			div1 = element("div");
-			a2 = element("a");
+			a1 = element("a");
 			if (if_block1) if_block1.c();
-			t4 = space();
+			t2 = space();
 			button = element("button");
 			create_component(icon.$$.fragment);
-			t5 = space();
+			t3 = space();
 			if (if_block2) if_block2.c();
 			this.h();
 		},
@@ -3502,26 +3470,21 @@ function create_fragment(ctx) {
 				each_blocks[i].l(nav_nodes);
 			}
 
-			t1 = claim_space(nav_nodes);
-			a1 = claim_element(nav_nodes, "A", { href: true, class: true });
-			var a1_nodes = children(a1);
-			t2 = claim_text(a1_nodes, t2_value);
-			a1_nodes.forEach(detach);
 			nav_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
-			t3 = claim_space(header_nodes);
+			t1 = claim_space(header_nodes);
 			div1 = claim_element(header_nodes, "DIV", { class: true });
 			var div1_nodes = children(div1);
-			a2 = claim_element(div1_nodes, "A", { href: true, class: true });
-			var a2_nodes = children(a2);
-			if (if_block1) if_block1.l(a2_nodes);
-			a2_nodes.forEach(detach);
-			t4 = claim_space(div1_nodes);
+			a1 = claim_element(div1_nodes, "A", { href: true, class: true });
+			var a1_nodes = children(a1);
+			if (if_block1) if_block1.l(a1_nodes);
+			a1_nodes.forEach(detach);
+			t2 = claim_space(div1_nodes);
 			button = claim_element(div1_nodes, "BUTTON", { id: true, "aria-label": true });
 			var button_nodes = children(button);
 			claim_component(icon.$$.fragment, button_nodes);
 			button_nodes.forEach(detach);
-			t5 = claim_space(div1_nodes);
+			t3 = claim_space(div1_nodes);
 			if (if_block2) if_block2.l(div1_nodes);
 			div1_nodes.forEach(detach);
 			header_nodes.forEach(detach);
@@ -3529,17 +3492,15 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-qh80cp");
-			attr(a1, "href", a1_href_value = /*primary_cta*/ ctx[2].url);
-			attr(a1, "class", "button svelte-qh80cp");
-			attr(nav, "class", "svelte-qh80cp");
-			attr(div0, "class", "desktop-nav svelte-qh80cp");
-			attr(a2, "href", "/");
-			attr(a2, "class", "logo svelte-qh80cp");
+			attr(a0, "class", "logo svelte-55eott");
+			attr(nav, "class", "svelte-55eott");
+			attr(div0, "class", "desktop-nav svelte-55eott");
+			attr(a1, "href", "/");
+			attr(a1, "class", "logo svelte-55eott");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div1, "class", "mobile-nav svelte-qh80cp");
-			attr(header, "class", "section-container svelte-qh80cp");
+			attr(div1, "class", "mobile-nav svelte-55eott");
+			attr(header, "class", "section-container svelte-55eott");
 		},
 		m(target, anchor) {
 			insert_hydration(target, header, anchor);
@@ -3555,17 +3516,14 @@ function create_fragment(ctx) {
 				}
 			}
 
-			append_hydration(nav, t1);
-			append_hydration(nav, a1);
-			append_hydration(a1, t2);
-			append_hydration(header, t3);
+			append_hydration(header, t1);
 			append_hydration(header, div1);
-			append_hydration(div1, a2);
-			if (if_block1) if_block1.m(a2, null);
-			append_hydration(div1, t4);
+			append_hydration(div1, a1);
+			if (if_block1) if_block1.m(a1, null);
+			append_hydration(div1, t2);
 			append_hydration(div1, button);
 			mount_component(icon, button, null);
-			append_hydration(div1, t5);
+			append_hydration(div1, t3);
 			if (if_block2) if_block2.m(div1, null);
 			current = true;
 
@@ -3599,7 +3557,7 @@ function create_fragment(ctx) {
 					} else {
 						each_blocks[i] = create_each_block_1(child_ctx);
 						each_blocks[i].c();
-						each_blocks[i].m(nav, t1);
+						each_blocks[i].m(nav, null);
 					}
 				}
 
@@ -3610,12 +3568,6 @@ function create_fragment(ctx) {
 				each_blocks.length = each_value_1.length;
 			}
 
-			if ((!current || dirty & /*primary_cta*/ 4) && t2_value !== (t2_value = /*primary_cta*/ ctx[2].label + "")) set_data(t2, t2_value);
-
-			if (!current || dirty & /*primary_cta*/ 4 && a1_href_value !== (a1_href_value = /*primary_cta*/ ctx[2].url)) {
-				attr(a1, "href", a1_href_value);
-			}
-
 			if (current_block_type_1 === (current_block_type_1 = select_block_type_1(ctx)) && if_block1) {
 				if_block1.p(ctx, dirty);
 			} else {
@@ -3624,15 +3576,15 @@ function create_fragment(ctx) {
 
 				if (if_block1) {
 					if_block1.c();
-					if_block1.m(a2, null);
+					if_block1.m(a1, null);
 				}
 			}
 
-			if (/*mobileNavOpen*/ ctx[3]) {
+			if (/*mobileNavOpen*/ ctx[2]) {
 				if (if_block2) {
 					if_block2.p(ctx, dirty);
 
-					if (dirty & /*mobileNavOpen*/ 8) {
+					if (dirty & /*mobileNavOpen*/ 4) {
 						transition_in(if_block2, 1);
 					}
 				} else {
@@ -3690,22 +3642,22 @@ function instance($$self, $$props, $$invalidate) {
 	let { primary_cta } = $$props;
 	let mobileNavOpen = false;
 
-	const click_handler = () => $$invalidate(3, mobileNavOpen = true);
-	const click_handler_1 = () => $$invalidate(3, mobileNavOpen = false);
+	const click_handler = () => $$invalidate(2, mobileNavOpen = true);
+	const click_handler_1 = () => $$invalidate(2, mobileNavOpen = false);
 
 	$$self.$$set = $$props => {
-		if ('props' in $$props) $$invalidate(4, props = $$props.props);
+		if ('props' in $$props) $$invalidate(3, props = $$props.props);
 		if ('logo' in $$props) $$invalidate(0, logo = $$props.logo);
 		if ('site_nav' in $$props) $$invalidate(1, site_nav = $$props.site_nav);
-		if ('primary_cta' in $$props) $$invalidate(2, primary_cta = $$props.primary_cta);
+		if ('primary_cta' in $$props) $$invalidate(4, primary_cta = $$props.primary_cta);
 	};
 
 	return [
 		logo,
 		site_nav,
-		primary_cta,
 		mobileNavOpen,
 		props,
+		primary_cta,
 		click_handler,
 		click_handler_1
 	];
@@ -3716,10 +3668,10 @@ class Component extends SvelteComponent {
 		super();
 
 		init(this, options, instance, create_fragment, safe_not_equal, {
-			props: 4,
+			props: 3,
 			logo: 0,
 			site_nav: 1,
-			primary_cta: 2
+			primary_cta: 4
 		});
 	}
 }

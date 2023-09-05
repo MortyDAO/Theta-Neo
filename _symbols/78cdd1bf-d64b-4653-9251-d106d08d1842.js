@@ -1,4 +1,4 @@
-// Site Footer - Updated September 1, 2023
+// Site Footer - Updated September 5, 2023
 function noop() { }
 function run(fn) {
     return fn();
@@ -1358,7 +1358,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-gkcc88");
+			attr(a, "class", "link svelte-pac9gy");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 		},
 		m(target, anchor) {
@@ -1430,9 +1430,9 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h4, "class", "label svelte-gkcc88");
-			attr(nav, "class", "svelte-gkcc88");
-			attr(div, "class", "item svelte-gkcc88");
+			attr(h4, "class", "label svelte-pac9gy");
+			attr(nav, "class", "svelte-pac9gy");
+			attr(div, "class", "item svelte-pac9gy");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -1576,14 +1576,14 @@ function create_fragment(ctx) {
 		h() {
 			attr(a0, "href", "/");
 			attr(a0, "class", "logo");
-			attr(div0, "class", "company-description svelte-gkcc88");
-			attr(div1, "class", "main svelte-gkcc88");
-			attr(div2, "class", "links svelte-gkcc88");
-			attr(footer, "class", "section-container svelte-gkcc88");
+			attr(div0, "class", "company-description svelte-pac9gy");
+			attr(div1, "class", "main svelte-pac9gy");
+			attr(div2, "class", "links svelte-pac9gy");
+			attr(footer, "class", "section-container svelte-pac9gy");
 			attr(a1, "href", "https://primo.so");
-			attr(a1, "class", "svelte-gkcc88");
-			attr(span, "class", "primo svelte-gkcc88");
-			attr(div3, "class", "subfooter svelte-gkcc88");
+			attr(a1, "class", "svelte-pac9gy");
+			attr(span, "class", "primo svelte-pac9gy");
+			attr(div3, "class", "subfooter svelte-pac9gy");
 		},
 		m(target, anchor) {
 			insert_hydration(target, footer, anchor);
