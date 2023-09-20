@@ -1,4 +1,4 @@
-// Icon List - Updated September 5, 2023
+// Icon List - Updated September 20, 2023
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -2779,7 +2779,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (54:6) {#each icon_list as { icon, title, description }}
+// (55:6) {#each icon_list as { icon, title, description }}
 function create_each_block(ctx) {
 	let li;
 	let div0;
@@ -2832,10 +2832,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "icon svelte-lt8bm7");
-			attr(h3, "class", "title svelte-lt8bm7");
-			attr(div1, "class", "description svelte-lt8bm7");
-			attr(li, "class", "svelte-lt8bm7");
+			attr(div0, "class", "icon svelte-fuzs3t");
+			attr(h3, "class", "title svelte-fuzs3t");
+			attr(div1, "class", "description svelte-fuzs3t");
+			attr(li, "class", "svelte-fuzs3t");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2930,8 +2930,8 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-lt8bm7");
-			attr(ul, "class", "svelte-lt8bm7");
+			attr(h2, "class", "heading svelte-fuzs3t");
+			attr(ul, "class", "svelte-fuzs3t");
 			attr(div, "class", "section-container");
 		},
 		m(target, anchor) {
