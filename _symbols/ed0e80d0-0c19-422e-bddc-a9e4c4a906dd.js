@@ -1,4 +1,4 @@
-// Testimonials 1 - Updated September 20, 2023
+// Testimonials 1 - Updated September 23, 2023
 function noop() { }
 const identity = x => x;
 function assign(tar, src) {
@@ -2982,140 +2982,113 @@ function fade(node, { delay = 0, duration = 400, easing = identity } = {}) {
 
 function create_key_block(ctx) {
 	let div2;
-	let span0;
-	let icon;
-	let t0;
 	let div0;
-	let raw_value = /*activeItem*/ ctx[3].quote.html + "";
+	let raw_value = /*activeItem*/ ctx[2].quote.html + "";
 	let div0_data_key_value;
-	let t1;
+	let t0;
 	let div1;
-	let span1;
-	let t2_value = /*activeItem*/ ctx[3].name + "";
+	let span0;
+	let t1_value = /*activeItem*/ ctx[2].name + "";
+	let t1;
+	let span0_data_key_value;
 	let t2;
-	let span1_data_key_value;
+	let span1;
+	let t3_value = /*activeItem*/ ctx[2].title + "";
 	let t3;
-	let span2;
-	let t4_value = /*activeItem*/ ctx[3].title + "";
-	let t4;
-	let span2_data_key_value;
+	let span1_data_key_value;
 	let div2_intro;
-	let current;
-	icon = new Component$1({ props: { icon: "fa6-solid:quote-right" } });
 
 	return {
 		c() {
 			div2 = element("div");
-			span0 = element("span");
-			create_component(icon.$$.fragment);
-			t0 = space();
 			div0 = element("div");
-			t1 = space();
+			t0 = space();
 			div1 = element("div");
+			span0 = element("span");
+			t1 = text(t1_value);
+			t2 = space();
 			span1 = element("span");
-			t2 = text(t2_value);
-			t3 = space();
-			span2 = element("span");
-			t4 = text(t4_value);
+			t3 = text(t3_value);
 			this.h();
 		},
 		l(nodes) {
 			div2 = claim_element(nodes, "DIV", { class: true });
 			var div2_nodes = children(div2);
-			span0 = claim_element(div2_nodes, "SPAN", { class: true });
-			var span0_nodes = children(span0);
-			claim_component(icon.$$.fragment, span0_nodes);
-			span0_nodes.forEach(detach);
-			t0 = claim_space(div2_nodes);
 			div0 = claim_element(div2_nodes, "DIV", { class: true, "data-key": true });
 			var div0_nodes = children(div0);
 			div0_nodes.forEach(detach);
-			t1 = claim_space(div2_nodes);
+			t0 = claim_space(div2_nodes);
 			div1 = claim_element(div2_nodes, "DIV", { class: true });
 			var div1_nodes = children(div1);
+			span0 = claim_element(div1_nodes, "SPAN", { class: true, "data-key": true });
+			var span0_nodes = children(span0);
+			t1 = claim_text(span0_nodes, t1_value);
+			span0_nodes.forEach(detach);
+			t2 = claim_space(div1_nodes);
 			span1 = claim_element(div1_nodes, "SPAN", { class: true, "data-key": true });
 			var span1_nodes = children(span1);
-			t2 = claim_text(span1_nodes, t2_value);
+			t3 = claim_text(span1_nodes, t3_value);
 			span1_nodes.forEach(detach);
-			t3 = claim_space(div1_nodes);
-			span2 = claim_element(div1_nodes, "SPAN", { class: true, "data-key": true });
-			var span2_nodes = children(span2);
-			t4 = claim_text(span2_nodes, t4_value);
-			span2_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			div2_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(span0, "class", "quote-icon svelte-jaiy4j");
-			attr(div0, "class", "quote svelte-jaiy4j");
-			attr(div0, "data-key", div0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[2] + "].quote");
-			attr(span1, "class", "name svelte-jaiy4j");
-			attr(span1, "data-key", span1_data_key_value = "testimonials[" + /*activeIndex*/ ctx[2] + "].name");
-			attr(span2, "class", "title svelte-jaiy4j");
-			attr(span2, "data-key", span2_data_key_value = "testimonials[" + /*activeIndex*/ ctx[2] + "].title");
-			attr(div1, "class", "person svelte-jaiy4j");
-			attr(div2, "class", "card svelte-jaiy4j");
+			attr(div0, "class", "quote svelte-1eo8i4l");
+			attr(div0, "data-key", div0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].quote");
+			attr(span0, "class", "name svelte-1eo8i4l");
+			attr(span0, "data-key", span0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].name");
+			attr(span1, "class", "title svelte-1eo8i4l");
+			attr(span1, "data-key", span1_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].title");
+			attr(div1, "class", "person svelte-1eo8i4l");
+			attr(div2, "class", "card svelte-1eo8i4l");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
-			append_hydration(div2, span0);
-			mount_component(icon, span0, null);
-			append_hydration(div2, t0);
 			append_hydration(div2, div0);
 			div0.innerHTML = raw_value;
-			append_hydration(div2, t1);
+			append_hydration(div2, t0);
 			append_hydration(div2, div1);
+			append_hydration(div1, span0);
+			append_hydration(span0, t1);
+			append_hydration(div1, t2);
 			append_hydration(div1, span1);
-			append_hydration(span1, t2);
-			append_hydration(div1, t3);
-			append_hydration(div1, span2);
-			append_hydration(span2, t4);
-			current = true;
+			append_hydration(span1, t3);
 		},
 		p(ctx, dirty) {
-			if ((!current || dirty & /*activeItem*/ 8) && raw_value !== (raw_value = /*activeItem*/ ctx[3].quote.html + "")) div0.innerHTML = raw_value;
-			if (!current || dirty & /*activeIndex*/ 4 && div0_data_key_value !== (div0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[2] + "].quote")) {
+			if (dirty & /*activeItem*/ 4 && raw_value !== (raw_value = /*activeItem*/ ctx[2].quote.html + "")) div0.innerHTML = raw_value;
+			if (dirty & /*activeIndex*/ 2 && div0_data_key_value !== (div0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].quote")) {
 				attr(div0, "data-key", div0_data_key_value);
 			}
 
-			if ((!current || dirty & /*activeItem*/ 8) && t2_value !== (t2_value = /*activeItem*/ ctx[3].name + "")) set_data(t2, t2_value);
+			if (dirty & /*activeItem*/ 4 && t1_value !== (t1_value = /*activeItem*/ ctx[2].name + "")) set_data(t1, t1_value);
 
-			if (!current || dirty & /*activeIndex*/ 4 && span1_data_key_value !== (span1_data_key_value = "testimonials[" + /*activeIndex*/ ctx[2] + "].name")) {
-				attr(span1, "data-key", span1_data_key_value);
+			if (dirty & /*activeIndex*/ 2 && span0_data_key_value !== (span0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].name")) {
+				attr(span0, "data-key", span0_data_key_value);
 			}
 
-			if ((!current || dirty & /*activeItem*/ 8) && t4_value !== (t4_value = /*activeItem*/ ctx[3].title + "")) set_data(t4, t4_value);
+			if (dirty & /*activeItem*/ 4 && t3_value !== (t3_value = /*activeItem*/ ctx[2].title + "")) set_data(t3, t3_value);
 
-			if (!current || dirty & /*activeIndex*/ 4 && span2_data_key_value !== (span2_data_key_value = "testimonials[" + /*activeIndex*/ ctx[2] + "].title")) {
-				attr(span2, "data-key", span2_data_key_value);
+			if (dirty & /*activeIndex*/ 2 && span1_data_key_value !== (span1_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].title")) {
+				attr(span1, "data-key", span1_data_key_value);
 			}
 		},
 		i(local) {
-			if (current) return;
-			transition_in(icon.$$.fragment, local);
-
 			if (!div2_intro) {
 				add_render_callback(() => {
 					div2_intro = create_in_transition(div2, fade, {});
 					div2_intro.start();
 				});
 			}
-
-			current = true;
 		},
-		o(local) {
-			transition_out(icon.$$.fragment, local);
-			current = false;
-		},
+		o: noop,
 		d(detaching) {
 			if (detaching) detach(div2);
-			destroy_component(icon);
 		}
 	};
 }
 
-// (108:4) {#if testimonials.length > 1}
+// (155:4) {#if testimonials.length > 1}
 function create_if_block(ctx) {
 	let div;
 	let button0;
@@ -3157,13 +3130,13 @@ function create_if_block(ctx) {
 			this.h();
 		},
 		h() {
-			button0.disabled = button0_disabled_value = /*activeIndex*/ ctx[2] === 0;
+			button0.disabled = button0_disabled_value = /*activeIndex*/ ctx[1] === 0;
 			attr(button0, "aria-label", "Show previous item");
-			attr(button0, "class", "svelte-jaiy4j");
-			button1.disabled = button1_disabled_value = /*activeIndex*/ ctx[2] >= /*testimonials*/ ctx[1].length - 1;
+			attr(button0, "class", "svelte-1eo8i4l");
+			button1.disabled = button1_disabled_value = /*activeIndex*/ ctx[1] >= /*testimonials*/ ctx[0].length - 1;
 			attr(button1, "aria-label", "Show next item");
-			attr(button1, "class", "svelte-jaiy4j");
-			attr(div, "class", "controls svelte-jaiy4j");
+			attr(button1, "class", "svelte-1eo8i4l");
+			attr(div, "class", "controls svelte-1eo8i4l");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3176,19 +3149,19 @@ function create_if_block(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					listen(button0, "click", /*showPreviousItem*/ ctx[4]),
-					listen(button1, "click", /*showNextItem*/ ctx[5])
+					listen(button0, "click", /*showPreviousItem*/ ctx[3]),
+					listen(button1, "click", /*showNextItem*/ ctx[4])
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (!current || dirty & /*activeIndex*/ 4 && button0_disabled_value !== (button0_disabled_value = /*activeIndex*/ ctx[2] === 0)) {
+			if (!current || dirty & /*activeIndex*/ 2 && button0_disabled_value !== (button0_disabled_value = /*activeIndex*/ ctx[1] === 0)) {
 				button0.disabled = button0_disabled_value;
 			}
 
-			if (!current || dirty & /*activeIndex, testimonials*/ 6 && button1_disabled_value !== (button1_disabled_value = /*activeIndex*/ ctx[2] >= /*testimonials*/ ctx[1].length - 1)) {
+			if (!current || dirty & /*activeIndex, testimonials*/ 3 && button1_disabled_value !== (button1_disabled_value = /*activeIndex*/ ctx[1] >= /*testimonials*/ ctx[0].length - 1)) {
 				button1.disabled = button1_disabled_value;
 			}
 		},
@@ -3214,89 +3187,79 @@ function create_if_block(ctx) {
 }
 
 function create_fragment(ctx) {
+	let div1;
 	let aside;
-	let h2;
-	let t0;
-	let t1;
-	let div;
-	let previous_key = /*activeIndex*/ ctx[2];
-	let t2;
+	let div0;
+	let previous_key = /*activeIndex*/ ctx[1];
+	let t;
 	let current;
 	let key_block = create_key_block(ctx);
-	let if_block = /*testimonials*/ ctx[1].length > 1 && create_if_block(ctx);
+	let if_block = /*testimonials*/ ctx[0].length > 1 && create_if_block(ctx);
 
 	return {
 		c() {
+			div1 = element("div");
 			aside = element("aside");
-			h2 = element("h2");
-			t0 = text(/*heading*/ ctx[0]);
-			t1 = space();
-			div = element("div");
+			div0 = element("div");
 			key_block.c();
-			t2 = space();
+			t = space();
 			if (if_block) if_block.c();
 			this.h();
 		},
 		l(nodes) {
-			aside = claim_element(nodes, "ASIDE", { class: true });
+			div1 = claim_element(nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			aside = claim_element(div1_nodes, "ASIDE", { class: true });
 			var aside_nodes = children(aside);
-			h2 = claim_element(aside_nodes, "H2", { class: true });
-			var h2_nodes = children(h2);
-			t0 = claim_text(h2_nodes, /*heading*/ ctx[0]);
-			h2_nodes.forEach(detach);
-			t1 = claim_space(aside_nodes);
-			div = claim_element(aside_nodes, "DIV", { class: true });
-			var div_nodes = children(div);
-			key_block.l(div_nodes);
-			t2 = claim_space(div_nodes);
-			if (if_block) if_block.l(div_nodes);
-			div_nodes.forEach(detach);
+			div0 = claim_element(aside_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			key_block.l(div0_nodes);
+			t = claim_space(div0_nodes);
+			if (if_block) if_block.l(div0_nodes);
+			div0_nodes.forEach(detach);
 			aside_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-jaiy4j");
-			attr(div, "class", "testimonial svelte-jaiy4j");
-			attr(aside, "class", "section-container svelte-jaiy4j");
+			attr(div0, "class", "testimonial svelte-1eo8i4l");
+			attr(aside, "class", "section-container svelte-1eo8i4l");
+			attr(div1, "class", "section-5 svelte-1eo8i4l");
 		},
 		m(target, anchor) {
-			insert_hydration(target, aside, anchor);
-			append_hydration(aside, h2);
-			append_hydration(h2, t0);
-			append_hydration(aside, t1);
-			append_hydration(aside, div);
-			key_block.m(div, null);
-			append_hydration(div, t2);
-			if (if_block) if_block.m(div, null);
+			insert_hydration(target, div1, anchor);
+			append_hydration(div1, aside);
+			append_hydration(aside, div0);
+			key_block.m(div0, null);
+			append_hydration(div0, t);
+			if (if_block) if_block.m(div0, null);
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			if (!current || dirty & /*heading*/ 1) set_data(t0, /*heading*/ ctx[0]);
-
-			if (dirty & /*activeIndex*/ 4 && safe_not_equal(previous_key, previous_key = /*activeIndex*/ ctx[2])) {
+			if (dirty & /*activeIndex*/ 2 && safe_not_equal(previous_key, previous_key = /*activeIndex*/ ctx[1])) {
 				group_outros();
 				transition_out(key_block, 1, 1, noop);
 				check_outros();
 				key_block = create_key_block(ctx);
 				key_block.c();
 				transition_in(key_block, 1);
-				key_block.m(div, t2);
+				key_block.m(div0, t);
 			} else {
 				key_block.p(ctx, dirty);
 			}
 
-			if (/*testimonials*/ ctx[1].length > 1) {
+			if (/*testimonials*/ ctx[0].length > 1) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 
-					if (dirty & /*testimonials*/ 2) {
+					if (dirty & /*testimonials*/ 1) {
 						transition_in(if_block, 1);
 					}
 				} else {
 					if_block = create_if_block(ctx);
 					if_block.c();
 					transition_in(if_block, 1);
-					if_block.m(div, null);
+					if_block.m(div0, null);
 				}
 			} else if (if_block) {
 				group_outros();
@@ -3320,7 +3283,7 @@ function create_fragment(ctx) {
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) detach(aside);
+			if (detaching) detach(div1);
 			key_block.d(detaching);
 			if (if_block) if_block.d();
 		}
@@ -3335,40 +3298,40 @@ function instance($$self, $$props, $$invalidate) {
 	let activeIndex = 0;
 
 	function showPreviousItem() {
-		$$invalidate(2, activeIndex = activeIndex - 1);
+		$$invalidate(1, activeIndex = activeIndex - 1);
 	}
 
 	function showNextItem() {
-		$$invalidate(2, activeIndex = activeIndex + 1);
+		$$invalidate(1, activeIndex = activeIndex + 1);
 	}
 
 	$$self.$$set = $$props => {
-		if ('props' in $$props) $$invalidate(6, props = $$props.props);
-		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
-		if ('testimonials' in $$props) $$invalidate(1, testimonials = $$props.testimonials);
+		if ('props' in $$props) $$invalidate(5, props = $$props.props);
+		if ('heading' in $$props) $$invalidate(6, heading = $$props.heading);
+		if ('testimonials' in $$props) $$invalidate(0, testimonials = $$props.testimonials);
 	};
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty & /*testimonials, activeIndex*/ 6) {
-			$$invalidate(3, activeItem = testimonials[activeIndex]);
+		if ($$self.$$.dirty & /*testimonials, activeIndex*/ 3) {
+			$$invalidate(2, activeItem = testimonials[activeIndex]);
 		}
 	};
 
 	return [
-		heading,
 		testimonials,
 		activeIndex,
 		activeItem,
 		showPreviousItem,
 		showNextItem,
-		props
+		props,
+		heading
 	];
 }
 
 class Component extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, instance, create_fragment, safe_not_equal, { props: 6, heading: 0, testimonials: 1 });
+		init(this, options, instance, create_fragment, safe_not_equal, { props: 5, heading: 6, testimonials: 0 });
 	}
 }
 

@@ -1,0 +1,164 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-1vsfxrb_START --><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  /* Custom theme options */
+  --color-accent: #20bfa9;
+  --color-accent-2: #ff794d;
+
+  /* Base values */
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --border-color: #e1ecf0;
+}
+
+/* Root element (use instead of `body`) */
+#page {
+  font-family: system-ui, sans-serif;
+  color: #1d263a;
+  line-height: 1.2;
+  font-size: 1.125rem;
+  background: white;
+}
+
+/* Elements */
+.section-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+a.link {
+  line-height: 1.3;
+  font-weight: 500;
+  border-bottom: 2px solid;
+  transform: translateY(-2px); /* move link back into place */
+  transition: var(--transition, 0.1s border);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.subheading {
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 90%;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 500;
+  background: var(--color-accent, rebeccapurple);
+  border-radius: 3rem;
+  padding: 15px 25px;
+  transition: var(--transition, 0.1s box-shadow);
+  border: 0;
+}
+
+/* reset */
+
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
+  }
+
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent, rebeccapurple);
+  }
+
+/* Content Section */
+.section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+.section .content p {
+    padding: 0.25rem 0;
+    line-height: 1.5;
+  }
+.section .content img {
+    width: 100%;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
+.section .content a.link {
+  }
+.section .content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+.section .content h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+.section .content h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+.section .content ul {
+    list-style: disc;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.section .content ol {
+    list-style: decimal;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.section .content blockquote {
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
+</style><!-- HEAD_svelte-1vsfxrb_END -->
+      <style>.section-container.svelte-jxjzlb.svelte-jxjzlb{width:100%;height:100%;justify-content:space-between;align-items:center;display:inline-flex;background:#0D3246;padding-top:10px;padding-bottom:10px}.section.svelte-jxjzlb.svelte-jxjzlb{width:100%;background:#0D3246;height:100%;justify-content:space-between;align-items:center;display:inline-flex;padding-top:10px;padding-bottom:10px}.logo.svelte-jxjzlb.svelte-jxjzlb{font-size:1.55rem;font-weight:800;line-height:1.2}.link.svelte-jxjzlb.svelte-jxjzlb{text-align:center;color:white;font-size:20px;font-family:Raleway;font-weight:400;line-height:22.40px;word-wrap:break-word;text-decoration:none;position:relative;top:2px;border-color:transparent}.custom-button.svelte-jxjzlb.svelte-jxjzlb{width:100%;height:100%;padding-left:26.98px;padding-right:26.98px;padding-top:16.19px;padding-bottom:16.19px;background:#EC5D4A;border-radius:8px;justify-content:center;align-items:flex-start;gap:12.28px;display:inline-flex}.nav-list.svelte-jxjzlb.svelte-jxjzlb{justify-content:flex-start;align-items:center;gap:32px;display:flex}.button-content.svelte-jxjzlb.svelte-jxjzlb{flex:1 1 0;align-self:stretch;text-align:center;color:white;font-size:16px;font-family:Raleway;font-weight:700;line-height:15px;word-wrap:break-word}.desktop-nav.svelte-jxjzlb.svelte-jxjzlb{justify-content:flex-start;align-items:center;gap:40px;display:flex}@media(min-width: 800px){.desktop-nav.svelte-jxjzlb.svelte-jxjzlb{display:flex
+}}.mobile-nav.svelte-jxjzlb.svelte-jxjzlb{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-jxjzlb.svelte-jxjzlb{display:none
+}}#popup.svelte-jxjzlb.svelte-jxjzlb{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-jxjzlb button#close.svelte-jxjzlb{position:absolute;right:5rem;top:1rem}</style>
+    </head>
+    <body id="page">
+       
+<div class="section svelte-jxjzlb" id="section-8c29a3c0"><div class="section svelte-jxjzlb"><header class="section-container svelte-jxjzlb"><a href="/" class="logo svelte-jxjzlb"><img src="https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695287042816ThetaLegal_RGB_Neg%201.png" alt=" " style="width: 209px; height: 47px"></a>
+  <div class="desktop-nav svelte-jxjzlb"><div class="nav-list svelte-jxjzlb"><a class="link svelte-jxjzlb" href="/products">Produkt</a></div>
+      <div class="custom-button svelte-jxjzlb"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkeVcYg7OQ_2arnapdgYTc-F46jLZfQhmUwq-pvFimXfB_Kw/viewform?embedded=true"><div class="button-content svelte-jxjzlb">Kontaktiere uns</div></a></div></div>
+  
+  
+  <div class="mobile-nav svelte-jxjzlb"><a href="/" class="logo svelte-jxjzlb"><img src="https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695287042816ThetaLegal_RGB_Neg%201.png" alt=" "></a>
+    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><g id="iconifySvelte0"><g id="iconifySvelte1"><g id="iconifySvelte2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g><!-- HTML_TAG_END --></svg></button>
+    </div></header></div></div> 
+
+      <script type="module">
+      import('/_symbols/2e0c9a96-73ab-43d4-b09f-d318aa833f5a.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-8c29a3c0'),
+              hydrate: true,
+              props: {"logo":{"image":{"alt":" ","src":"https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695287042816ThetaLegal_RGB_Neg%201.png","url":"https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695287042816ThetaLegal_RGB_Neg%201.png","size":4},"title":"Theta Legal"},"site_nav":[{"link":{"url":"/products","label":"Produkt"}}],"primary_cta":{"url":"https://docs.google.com/forms/d/e/1FAIpQLSfkeVcYg7OQ_2arnapdgYTc-F46jLZfQhmUwq-pvFimXfB_Kw/viewform?embedded=true","label":"Kontaktiere uns"},"lang":{"en":"EN","home":{"url":"/","label":"Home"},"image":{"alt":"","src":"https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695288084806Frame.png","url":"https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695288084806Frame.png","size":1},"title":"","selecticon":{"alt":"","src":"https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695299804083Icon.png","url":"https://ploxnxwnmodzixrdbqht.supabase.co/storage/v1/object/public/images/b5858bcf-b3b8-49fb-b7bd-589c13609f14/1695299804083Icon.png","size":0}},"english":{"url":"/","label":"EN","active":false},"":""}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
