@@ -1269,7 +1269,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (148:10) {#if item.image.url}
+// (146:10) {#if item.image.url}
 function create_if_block(ctx) {
 	let img;
 	let img_alt_value;
@@ -1286,7 +1286,7 @@ function create_if_block(ctx) {
 		},
 		h() {
 			attr(img, "alt", img_alt_value = /*item*/ ctx[5].image.alt);
-			attr(img, "class", "photos svelte-5h3nc");
+			attr(img, "class", "photos svelte-m2vwux");
 			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[5].image.url)) attr(img, "src", img_src_value);
 		},
 		m(target, anchor) {
@@ -1307,7 +1307,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (146:6) {#each items as item}
+// (144:6) {#each items as item}
 function create_each_block(ctx) {
 	let li;
 	let t0;
@@ -1355,10 +1355,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(p, "class", "short-quote svelte-5h3nc");
-			attr(div0, "class", "long-quote svelte-5h3nc");
-			attr(div1, "class", "info svelte-5h3nc");
-			attr(li, "class", "svelte-5h3nc");
+			attr(p, "class", "short-quote svelte-m2vwux");
+			attr(div0, "class", "long-quote svelte-m2vwux");
+			attr(div1, "class", "info svelte-m2vwux");
+			attr(li, "class", "svelte-m2vwux");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -1469,12 +1469,12 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "heading svelte-5h3nc");
-			attr(div1, "class", "subheading svelte-5h3nc");
-			attr(div2, "class", "heading2 svelte-5h3nc");
-			attr(ul, "class", "cards svelte-5h3nc");
-			attr(div3, "class", "section-container svelte-5h3nc");
-			attr(section, "class", "svelte-5h3nc");
+			attr(div0, "class", "heading svelte-m2vwux");
+			attr(div1, "class", "subheading svelte-m2vwux");
+			attr(div2, "class", "heading2 svelte-m2vwux");
+			attr(ul, "class", "cards svelte-m2vwux");
+			attr(div3, "class", "section-container svelte-m2vwux");
+			attr(section, "class", "svelte-m2vwux");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section, anchor);

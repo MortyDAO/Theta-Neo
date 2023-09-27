@@ -1271,7 +1271,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (131:6) {#each icon_list as { icon, title, description }}
+// (112:6) {#each icon_list as { icon, title, description }}
 function create_each_block(ctx) {
 	let li;
 	let div0;
@@ -1312,9 +1312,9 @@ function create_each_block(ctx) {
 		},
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*icon*/ ctx[4].url)) attr(img, "src", img_src_value);
-			attr(div0, "class", "icon svelte-163tkm6");
-			attr(div1, "class", "description svelte-163tkm6");
-			attr(li, "class", "svelte-163tkm6");
+			attr(div0, "class", "icon svelte-n5gpwv");
+			attr(div1, "class", "description svelte-n5gpwv");
+			attr(li, "class", "svelte-n5gpwv");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -1406,11 +1406,11 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "heading svelte-163tkm6");
-			attr(div1, "class", "subheading svelte-163tkm6");
-			attr(ul, "class", "svelte-163tkm6");
-			attr(div2, "class", "section-container svelte-163tkm6");
-			attr(div3, "class", "section-3 svelte-163tkm6");
+			attr(div0, "class", "heading svelte-n5gpwv");
+			attr(div1, "class", "subheading svelte-n5gpwv");
+			attr(ul, "class", "svelte-n5gpwv");
+			attr(div2, "class", "section-container");
+			attr(div3, "class", "section-3 svelte-n5gpwv");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);

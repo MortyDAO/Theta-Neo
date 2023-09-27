@@ -3034,14 +3034,14 @@ function create_key_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "quote svelte-i0kr4c");
+			attr(div0, "class", "quote svelte-sif0sa");
 			attr(div0, "data-key", div0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].quote");
-			attr(span0, "class", "name svelte-i0kr4c");
+			attr(span0, "class", "name svelte-sif0sa");
 			attr(span0, "data-key", span0_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].name");
-			attr(span1, "class", "title svelte-i0kr4c");
+			attr(span1, "class", "title svelte-sif0sa");
 			attr(span1, "data-key", span1_data_key_value = "testimonials[" + /*activeIndex*/ ctx[1] + "].title");
-			attr(div1, "class", "person svelte-i0kr4c");
-			attr(div2, "class", "card svelte-i0kr4c");
+			attr(div1, "class", "person svelte-sif0sa");
+			attr(div2, "class", "card svelte-sif0sa");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3088,7 +3088,7 @@ function create_key_block(ctx) {
 	};
 }
 
-// (167:4) {#if testimonials.length > 1}
+// (155:4) {#if testimonials.length > 1}
 function create_if_block(ctx) {
 	let div;
 	let button0;
@@ -3132,11 +3132,11 @@ function create_if_block(ctx) {
 		h() {
 			button0.disabled = button0_disabled_value = /*activeIndex*/ ctx[1] === 0;
 			attr(button0, "aria-label", "Show previous item");
-			attr(button0, "class", "svelte-i0kr4c");
+			attr(button0, "class", "svelte-sif0sa");
 			button1.disabled = button1_disabled_value = /*activeIndex*/ ctx[1] >= /*testimonials*/ ctx[0].length - 1;
 			attr(button1, "aria-label", "Show next item");
-			attr(button1, "class", "svelte-i0kr4c");
-			attr(div, "class", "controls svelte-i0kr4c");
+			attr(button1, "class", "svelte-sif0sa");
+			attr(div, "class", "controls svelte-sif0sa");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3222,9 +3222,9 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "testimonial svelte-i0kr4c");
-			attr(aside, "class", "section-container svelte-i0kr4c");
-			attr(div1, "class", "section-5 svelte-i0kr4c");
+			attr(div0, "class", "testimonial svelte-sif0sa");
+			attr(aside, "class", "section-container svelte-sif0sa");
+			attr(div1, "class", "section-5 svelte-sif0sa");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
