@@ -1,4 +1,4 @@
-// Icon List - Updated September 23, 2023
+// Icon List - Updated September 27, 2023
 function noop() { }
 function run(fn) {
     return fn();
@@ -1271,7 +1271,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (108:6) {#each icon_list as { icon, title, description }}
+// (111:6) {#each icon_list as { icon, title, description }}
 function create_each_block(ctx) {
 	let li;
 	let div0;
@@ -1312,9 +1312,9 @@ function create_each_block(ctx) {
 		},
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*icon*/ ctx[4].url)) attr(img, "src", img_src_value);
-			attr(div0, "class", "icon svelte-clxkqp");
-			attr(div1, "class", "description svelte-clxkqp");
-			attr(li, "class", "svelte-clxkqp");
+			attr(div0, "class", "icon svelte-bqmijb");
+			attr(div1, "class", "description svelte-bqmijb");
+			attr(li, "class", "svelte-bqmijb");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -1406,11 +1406,11 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "heading svelte-clxkqp");
-			attr(div1, "class", "subheading svelte-clxkqp");
-			attr(ul, "class", "svelte-clxkqp");
+			attr(div0, "class", "heading svelte-bqmijb");
+			attr(div1, "class", "subheading svelte-bqmijb");
+			attr(ul, "class", "svelte-bqmijb");
 			attr(div2, "class", "section-container");
-			attr(div3, "class", "section-3 svelte-clxkqp");
+			attr(div3, "class", "section-3 svelte-bqmijb");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
